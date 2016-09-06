@@ -1,0 +1,2 @@
+# geocomputing
+A geocomputing course
