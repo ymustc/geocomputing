@@ -1,0 +1,13 @@
+name, start, end
+Cambrian (C), 544, 495 
+Ordivician (O), 495, 492 
+Silurian (S), 442, 416 
+Devonian (D), 416, 354 
+Mississipian (M), 354, 324 
+Pennsylvanian (IP, 324, 295 
+Permian (P), 304, 248 
+Triassic (Tr), 248, 205 
+Jurassic (J), 205, 144 
+Cretaceous (C), 160, 65
+Tertiary (T), 65, 1.8 
+Quaternary (Q), 1.8, 0.0

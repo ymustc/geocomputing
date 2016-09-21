@@ -1,4 +1,11 @@
-old/
+# Large files
+3D_gathers_pstm_nmo_X1001.sgy
+Penobscot.sgy
+poland.zip
+Penobscot_0-1000ms.sgy
+Penobscot_NumPy.sgy
+Line_001.sgy
+poland/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
