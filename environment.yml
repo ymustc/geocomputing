@@ -1,0 +1,12 @@
+channels:
+- conda-forge
+dependencies:
+- python=3.5.2
+- numpy
+- matplotlib
+- scipy
+- jupyter
+- obspy
+- pip:
+  - bruges
+  - welly
