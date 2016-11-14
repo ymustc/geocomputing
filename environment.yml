@@ -6,7 +6,12 @@ dependencies:
 - matplotlib
 - scipy
 - jupyter
+- ipyparallel
+- tqdm
 - obspy
+- geopandas
+- folium
 - pip:
+  - lasio
   - bruges
   - welly
