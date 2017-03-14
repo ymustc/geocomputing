@@ -1,0 +1,44 @@
+MARMOUSI DATA FILES - IEEE BIG ENDIAN FORMAT
+
+The three files in this directory are
+
+velocity.segy = Marmousi velocity model
+density.segy  = Marmousi density model
+data.segy     = Marmousi synthetic data
+
+All three are SEGY disk images, but converted to IEEE big endian
+format.
+
+Many utilities can read these files or convert them to other
+formats. Probably the easiest to access is the Seismic Unix segyread
+command. [To obtain Seismic Unix, visit www.cwp.mines.edu/cwpcodes.]
+
+To read these files into SU format, 
+
+* on a big endian platform (Solaris or Linux on UltraSparc, 
+Mac OS-X on PowerPC)
+
+  segyread tape=xxx.segy conv=0 endian=1 > xxx.su
+
+* on a little endian platform (Linux on Intel/AMD, DEC Alpha)  
+
+  segyread tape=xxx.segy conv=0 endian=0 > xxx.su
+
+where xxx = velocity, density, or data.
+
+To obtain a flat binary file of data samples (minus the SEGY headers
+included in the SU data format) us sustrip:
+
+  sustrip < xxx.su > xxx.bin
+
+The velocity and density files have nx = 2301, nz = 751 samples, with
+x being the fast dimension, ie. the data are stored by depth row.
+
+The data consists of 23040 traces of 750 samples each, with the time
+axis being fastest.
+
+[William W. Symes constructed these files using an ad hoc utility to
+read the original IFP tapes and convert the data on the fly to IEEE
+format, in Fall 1990.]
+
+WWS, 11/05
